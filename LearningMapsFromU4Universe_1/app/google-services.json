@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "303304132734",
+    "firebase_url": "https://learningmapsfromu4universe.firebaseio.com",
+    "project_id": "learningmapsfromu4universe",
+    "storage_bucket": "learningmapsfromu4universe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303304132734:android:cd3705731eac5510c1b02f",
+        "android_client_info": {
+          "package_name": "com.example.learningmapsfromu4universe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303304132734-sbc7qnru7ddj8qg95aflrbbtap9ieco3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.learningmapsfromu4universe",
+            "certificate_hash": "24d30fc8ffa4b2c20c2445f2c4c4cc26455dba21"
+          }
+        },
+        {
+          "client_id": "303304132734-t9kvpc9pvi55kv49h087lnrf0sh29sv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-x2BI5RYZ07Ond2s-XgFBRUFiyOn3-T8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303304132734-t9kvpc9pvi55kv49h087lnrf0sh29sv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
