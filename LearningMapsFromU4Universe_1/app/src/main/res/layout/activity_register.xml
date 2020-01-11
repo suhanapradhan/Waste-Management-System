@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<LinearLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name:"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#99AAAB"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address:"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#99AAAB"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email:"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#99AAAB"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Passwrod:"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#99AAAB"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/ConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password:"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#99AAAB"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/FamilyNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Family Numbers"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#99AAAB"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/HouseNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="House Number:"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#99AAAB"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number:"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#99AAAB"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/rounded_edge"
+        />
+
+</LinearLayout>
+</ScrollView>
