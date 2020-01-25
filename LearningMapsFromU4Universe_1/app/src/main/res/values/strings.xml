@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">LearningMapsFromU4Universe</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="chemical_composition">
+        <br>
+        <b>Fraction</b></br>
+        <br>
+        Sugars, starches, amino acids, urea, ammonium salts,(hot/cold water solubles)
+        </br>
+        <br>
+            <b>Percentage (on dry water basis)</b>
+        </br>
+        <br>
+            2-30
+        </br>
+    </string>
+    <string name="designation">Designation:</string>
+
+    <string-array name="Designation">
+        <item> Admin </item>
+        <item> User </item>
+        <item> Driver </item>
+    </string-array>
+
 </resources>

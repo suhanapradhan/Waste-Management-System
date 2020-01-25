@@ -15,7 +15,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Register"></activity>
+        <activity android:name=".driverProfile"></activity>
+        <activity android:name=".userProfile" />
+        <activity android:name=".WelcomeDrivers" />
+        <activity android:name=".SignUp_Form_Admin" />
+        <activity android:name=".AdminManage" />
+        <activity android:name=".admin" />
+        <activity
+            android:name=".chemical_composition"
+            android:parentActivityName=".Organic_Waste" />
+        <activity
+            android:name=".Adv_Ow"
+            android:parentActivityName=".Organic_Waste" />
+        <activity
+            android:name=".whatisorganicw"
+            android:parentActivityName=".Organic_Waste" />
+        <activity
+            android:name=".Organic_Waste"
+            android:parentActivityName=".Guide_section" />
+        <activity android:name=".Guide_section" />
+        <activity android:name=".Register" />
         <activity android:name=".MainActivity" />
 
         <meta-data

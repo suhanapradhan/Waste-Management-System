@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_myHome"
+            android:icon="@drawable/ic_myhome"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_myProfile"
+            android:icon="@drawable/ic_myprofile"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/nav_mypickup_timing"
+            android:icon="@drawable/ic_pickup_timing"
+            android:title="My Schedule" />
+
+        <item
+            android:id="@+id/nav_uploads"
+            android:icon="@drawable/ic_uploads"
+            android:title="Uploads" />
+
+        <item
+            android:id="@+id/nav_capture_data"
+            android:icon="@drawable/ic_capture_data"
+            android:title="Capture Data" />
+
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
+
+
+    </group>
+
+
+    <item android:title="Communicate">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_share_app"
+                android:icon="@drawable/ic_share_app"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/ic_signout"
+                android:title="Signout" />
+
+        </menu>
+    </item>
+
+
+</menu>

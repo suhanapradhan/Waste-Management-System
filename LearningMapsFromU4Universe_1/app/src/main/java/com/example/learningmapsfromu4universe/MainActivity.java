@@ -10,6 +10,9 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
@@ -30,14 +33,26 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.security.PrivilegedAction;
 
-public class MainActivity extends FragmentActivity implements OnMapReadyCallback,
+
+// Google map ra Navigation Bar ko code yaha xa hai ....
+
+//coding in flow ko navigation bar ko video no 2 ko time lapse 8:36
+// link   : https://www.youtube.com/watch?v=zYVEMCiDcmY
+
+// aba main activity vanya chai map wala activity bhayo hai for users,
+// so aba euta naya cardview wala activity banauna paryo ani balla tesh
+// ma toolbar halna paryo
+
+
+public class MainActivity extends  FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
-        LocationListener {
+        LocationListener  {
 
     private boolean mLocationPermissionGranted;
     public static final int PERMISSION_REQUEST_CODE = 9001;
@@ -58,6 +73,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+       // Toolbar toolbar =findViewById(R.id.toolbar); //Navigation bar ko code initialization;
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
         {
@@ -81,6 +98,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 //            }
 //        }
     }
+
 
 
     public boolean checkLocationPermission(){
@@ -192,7 +210,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         );
             // storing the helper class data to firebase --> codes
 
-        FirebaseDatabase.getInstance().getReference("Current Location")
+        FirebaseDatabase.getInstance().getReference("Current Location").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                 .setValue(helper).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
@@ -235,7 +253,12 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
+
+
+
+
 }
+
 
 
 
